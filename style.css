@@ -1,0 +1,308 @@
+body{
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 10px;
+    border-radius: 5px;
+    color: black;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+button:hover{
+    background-color:rgb(124, 202, 233);
+    color: white;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    color: white;
+    background-image: url('/media/image-header.jpg');
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: black;
+}
+
+#creative{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("/media/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#creative h1{
+    color: white;
+}
+#transform .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#transform a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold; 
+}
+#stand .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#stand a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold; 
+}
+#graphic .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#graphic a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold; 
+}
+#photo .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#photo a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+#testimonios-clientes{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+#testimonios-clientes .container{
+    padding: 150px 12px;
+}
+
+#testimonios-clientes h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#testimonios-clientes p{
+    display: none;
+}
+
+#testimonios-clientes .bloque{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+@media (min-width: 850px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #creative h1{
+        font-size: 90px;
+    }
+
+    #transform .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #transform .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #transform h2{
+        margin-top: 0px;
+    }
+
+    #transform .img-container{
+        background-image: url("/media/image-transform.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+    #stand .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #stand .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #stand h2{
+        margin-top: 0px;
+    }
+
+    #stand .img-container{
+        background-image: url("/media/image-stand-out.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+    #graphic .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #graphic .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #graphic h2{
+        margin-top: 0px;
+    }
+    #graphic .img-container{
+        background-image: url("/media/image-graphic-design.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+    #photo .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #photo .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #photo h2{
+        margin-top: 0px;
+    }
+
+    #photo .img-container{
+        background-image: url("/media/image-photography.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #testimonios-clientes .testimonios{
+        display: flex;
+        justify-content: center;
+    }
+
+    #testimonios-clientes p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #testimonios-clientes h2{
+        font-size: 4em;
+    }
+
+    #testimonios-clientes h3{
+        margin-top: 0;
+    }
+
+    #testimonios-clientes .bloque{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+    }
+    #gallery > img{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        float:right;
+        width: 350px;
+    }
+    }
+    #imgtesti1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
